@@ -19,14 +19,13 @@ main = [
     InlineQueryResultArticle(
         title="Whisper Bot",
         input_message_content=InputTextMessageContent("Write Target User's @username or id at the end of your message."),
-        url="https://t.me/StarkBots",
+        url="https://t.me/BotxDesk",
         description="Write Target User's @username or id at the end of your message.",
-        thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+        thumb_url="https://telegra.ph/file/8563f0df6e8581900de8d.jpg",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Learn More", url="https://t.me/WhisperStarkBot?start=start")],
-                [InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")],
-                [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")]
+                [InlineKeyboardButton("🔒 Send a Whisper Message 🔒", switch_inline_query="")],
+                [InlineKeyboardButton("❓Also Try our other bots 💜", url="https://t.me/botXnetwork")]
             ]
         ),
     )
@@ -81,9 +80,9 @@ async def previous_target(sender):
                   title=text1,
                   input_message_content=InputTextMessageContent(
                       f"A whisper message to {mention}" + " " + text2),
-                  url="https://t.me/StarkBots",
+                  url="https://t.me/BotxNetwork",
                   description=text2,
-                  thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+                  thumb_url="https://telegra.ph/file/8563f0df6e8581900de8d.jpg",
                   reply_markup=InlineKeyboardMarkup(
                       [
                           [
@@ -111,7 +110,7 @@ async def answer(bot: Client, query):
         await query.answer(
             results=main,
             switch_pm_text="🔒 Learn How to send Whispers",
-            switch_pm_parameter="start"
+            switch_pm_parameter="help"
         )
     elif len(query_list) == 1:
         sender = query.from_user.id
@@ -152,9 +151,9 @@ async def answer(bot: Client, query):
                     InlineQueryResultArticle(
                         title=text1,
                         input_message_content=InputTextMessageContent(f"A whisper message to {target_user.mention}" + " " + text2),
-                        url="https://t.me/StarkBots",
+                        url="https://t.me/BotxNetwork",
                         description=text2,
-                        thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+                        thumb_url="https://telegra.ph/file/8563f0df6e8581900de8d.jpg",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
