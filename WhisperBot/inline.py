@@ -24,7 +24,7 @@ main = [
         thumb_url="https://telegra.ph/file/8563f0df6e8581900de8d.jpg",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🔒 Send a Whisper Message 🔒", switch_inline_query="")],
+                [InlineKeyboardButton("🔒 Send a Whisper Message 🔒", switch_inline_query="@wisperXbot")],
                 [InlineKeyboardButton("❓Also Try our other bots 💜", url="https://t.me/botXnetwork")]
             ]
         ),
