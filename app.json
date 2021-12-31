@@ -32,6 +32,11 @@
       "required": true,
       "value": "ANYTHING"
     },
+    "DATABASE_URL": {
+      "description": "Get this value from elephantsql.com",
+      "required": true,
+      "value": ""
+    },
     "API_ID": {
       "description": "Get this value from my.telegram.org.",
       "required": true,
